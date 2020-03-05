@@ -21625,3 +21625,23 @@ Processing by EmailsController#index as HTML
 Completed 200 OK in 59ms (Views: 55.7ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/" for ::1 at 2020-03-06 00:17:26 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/hadrien/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by EmailsController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/hadrien/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering emails/index.html.erb within layouts/application
+  Rendered emails/_jumbotron.html.erb (0.8ms)
+  [1m[36mEmail Load (0.9ms)[0m  [1m[34mSELECT "emails".* FROM "emails" ORDER BY "emails"."id" ASC[0m
+  ↳ app/views/emails/index.html.erb:8
+  Rendered emails/_email.html.erb (1.2ms)
+  Rendered emails/_email.html.erb (0.5ms)
+  Rendered emails/_email.html.erb (0.3ms)
+  Rendered emails/_email.html.erb (0.2ms)
+  Rendered emails/index.html.erb within layouts/application (27.7ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+Completed 200 OK in 391ms (Views: 348.5ms | ActiveRecord: 16.4ms)
+
+

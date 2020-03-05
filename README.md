@@ -2,7 +2,7 @@
 # Projet de Gmail like en AJAX :
 
 ## pour faire fonctionner le projet en production :
-[Lien Heroku](https://toulouse-mail.herokuapp.com/)
+[Lien Heroku](https://bit-mail.herokuapp.com/)
 
 
 ## Pour faire fonctionner le projet en développement :

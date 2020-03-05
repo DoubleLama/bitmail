@@ -1,0 +1,21 @@
+<%= render 'jumbotron'%>
+<div class="container">
+  <div class="row mb-5">
+    <div class="col-md-4">
+      <h3 class="text-center mb-4 text-info">Boîte de réception</h3>
+      <ul id="email-list">
+      
+        <% @emails.order(:id).reverse.each do |email|%>
+          <%= render "email", email: email%>
+        <%end%>
+
+      </ul>
+    </div>
+
+    <div class="col-md-8 pt-5 mt-5 border" style="max-height: 400px">
+        <div id="mail-show"> 
+          <div class="child ">
+          </div>
+        </div>
+    </div>
+  </div>

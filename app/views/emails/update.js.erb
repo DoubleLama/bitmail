@@ -1,0 +1,3 @@
+document.getElementById("email-<%= @email.id %>").classList.toggle("font-weight-bold");
+
+document.querySelector(".btn-primary").innerHTML = "<%= @email.read ? "Marquer comme non-lu" : "Marquer comme lu" %>";

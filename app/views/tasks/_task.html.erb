@@ -1,0 +1,7 @@
+<li id="task-<%=task.id%>">
+  <%= task.title %>
+  <% unless task.deadline.nil? %>
+    , to read: <%= task.deadline.strftime('%D')  %>
+  <% end %>
+  <%= link_to "Supprimer", task_path(task.id), method:"delete", remote: true %>
+</li>

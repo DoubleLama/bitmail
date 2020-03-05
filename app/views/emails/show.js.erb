@@ -1,0 +1,6 @@
+
+document.getElementById("mail-show").innerHTML = "";
+
+document.getElementById("mail-show").insertAdjacentHTML("beforeend", "<%= j render 'show', email: @email.body %>");
+
+document.getElementById("email-<%= @email.id %>").classList.remove("font-weight-bold")

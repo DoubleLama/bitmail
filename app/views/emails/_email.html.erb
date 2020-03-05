@@ -1,0 +1,13 @@
+<li id="email-<%= email.id %>" class="border-right <%= email.read ? "" : "font-weight-bold" %>">
+
+    <%= link_to "#{email.object}", email_path(email.id), class: "text-dark",remote: true%>
+
+    <div class="row">      
+        <div class ="offset-md-10">
+            <%= link_to  email_path(email.id), class: "text-danger font-weight-normal", method:"delete", remote: true do%>
+            <i class="fas fa-trash-alt"></i>
+            <% end %>
+        </div>
+    </div>
+    <hr>
+</li>

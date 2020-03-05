@@ -1,0 +1,1 @@
+document.querySelector("#cat<%=@task.category_id%> + .card ul").insertAdjacentHTML("beforeend", "<%= j render 'task', task: @task %>")
